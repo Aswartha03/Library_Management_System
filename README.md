@@ -1,5 +1,5 @@
 A Library Management System (LMS) is a software application designed to manage and streamline the operations of a library. It helps librarians and users efficiently handle day-to-day tasks such as cataloging books, managing member information, issuing and returning books, tracking overdue items, and generating reports.
-Key Features of a Library Management System
+Key Features of a Library Management System : 
 1 . Book Management
 The system stores information about books including title, author, publisher, edition, category, and availability. It allows easy addition, updating, and removal of books from the database.
 2. Member Management
