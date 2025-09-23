@@ -20,7 +20,7 @@ function Profile() {
           alert("No token found. Please log in.");
           return;
         }
-        const res = await fetch("http://localhost:3000/user/profile", {
+        const res = await fetch("https://library-management-system-i0c3.onrender.com/user/profile", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function Profile() {
         alert("No token found. Please log in.");
         return;
       }
-      const res = await fetch(`http://localhost:3000/borrow/return/${bookId}`, {
+      const res = await fetch(`https://library-management-system-i0c3.onrender.com/borrow/return/${bookId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

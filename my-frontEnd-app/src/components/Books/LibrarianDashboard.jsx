@@ -7,7 +7,7 @@ function LibrarianDashboard() {
   const fetchBooks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:3000/book/allBooks", {
+      const response = await fetch("https://library-management-system-i0c3.onrender.com/book/allBooks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -22,7 +22,7 @@ function LibrarianDashboard() {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await fetch(`http://localhost:3000/book/delete/${id}`, {
+      await fetch(`https://library-management-system-i0c3.onrender.com/book/delete/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

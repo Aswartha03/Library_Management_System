@@ -24,7 +24,7 @@ function AddBook() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/book/add-book", {
+      const res = await fetch("https://library-management-system-i0c3.onrender.com/book/add-book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

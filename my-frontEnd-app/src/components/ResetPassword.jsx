@@ -11,7 +11,7 @@ function ResetPassword() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/user/reset-password/${token}`, {
+      const res = await fetch(`https://library-management-system-i0c3.onrender.com/user/reset-password/${token}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

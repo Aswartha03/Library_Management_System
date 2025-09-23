@@ -32,7 +32,7 @@ function Signup() {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const result = await fetch("http://localhost:3000/user/signup", {
+      const result = await fetch("https://library-management-system-i0c3.onrender.com/user/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

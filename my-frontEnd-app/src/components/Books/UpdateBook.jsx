@@ -16,7 +16,7 @@ function UpdateBook() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get(`http://localhost:3000/book/${id}`, {
+      .get(`https://library-management-system-i0c3.onrender.com/book/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -29,7 +29,7 @@ function UpdateBook() {
     e.preventDefault();
     const token = localStorage.getItem("token");
     try {
-      await axios.put(`http://localhost:3000/book/update/${id}`, bookData, {
+      await axios.put(`https://library-management-system-i0c3.onrender.com/book/update/${id}`, bookData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

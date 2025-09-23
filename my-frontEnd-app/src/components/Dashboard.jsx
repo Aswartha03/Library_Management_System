@@ -6,11 +6,12 @@ function DashBoard() {
   const fetchBooks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:3000/book/allBooks", {
+      const response = await fetch("https://library-management-system-i0c3.onrender.com/book/allBooks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
+      // https://library-management-system-i0c3.onrender.com
       const data = await response.json();
       setBooks(data.message || data);
     } catch (error) {

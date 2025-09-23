@@ -12,7 +12,7 @@ function EditProfile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     async function fetchData() {
-      const res = await fetch("http://localhost:3000/user/profile", {
+      const res = await fetch("https://library-management-system-i0c3.onrender.com/user/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -29,7 +29,7 @@ function EditProfile() {
   async function handleSubmit(e) {
     e.preventDefault();
     const token = localStorage.getItem("token");
-    const res = await fetch("http://localhost:3000/user/update", {
+    const res = await fetch("https://library-management-system-i0c3.onrender.com/user/update", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
